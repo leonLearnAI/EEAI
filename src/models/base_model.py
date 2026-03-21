@@ -18,3 +18,8 @@ class BaseModel(ABC):
     def print_results(self, y_true, y_pred, label_name: str = ""):
         # Print accuracy and F1 score for given label
         pass
+
+    @abstractmethod
+    def evaluate(self, X_test, y_test) -> dict:
+        # Run predictions on test data and return a dict of evaluation metrics
+        pass
