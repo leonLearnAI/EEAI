@@ -23,3 +23,8 @@ class RandomForest(BaseModel):
         print(f"\n{header}")
         print(f"  Accuracy : {metrics['accuracy']:.4f}")
         print(f"  F1 Macro : {metrics['f1_macro']:.4f}")
+
+    def evaluate(self, X_test, y_test) -> dict:
+        # Predict on test data and return evaluation metrics
+        y_pred = self.predict(X_test)
+        return compute_metrics(y_test, y_pred)
