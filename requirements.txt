@@ -1,0 +1,3 @@
+# Core dependencies for the CA1 pipeline
+pandas
+scikit-learn
