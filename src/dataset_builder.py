@@ -8,7 +8,6 @@
 # print("Empty text count:", (df["text"].str.len() == 0).sum())
 
 from dataclasses import dataclass
-from re import M
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
