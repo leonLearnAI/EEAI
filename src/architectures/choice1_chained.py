@@ -1,6 +1,7 @@
 """Choice 1 architecture: chained multi-output experiments."""
 
 from collections import OrderedDict
+from pathlib import Path
 from typing import Any
 
 from src.evaluation import compute_metrics
@@ -68,9 +69,29 @@ def run_choice1(bundle: Any, model_name: str = "rf") -> dict:
 	return _summary_dict(type2_result, type23_result, type234_result)
 
 
+def print_choice1_summary(summary: dict) -> None:
+	print("Choice1 Results (Chained Multi-Outputs)")
+	print("task | accuracy | f1_macro")
+	for key in ["type2", "type23", "type234"]:
+		row = summary[key]
+		print(f"{row['task']} | {row['accuracy']:.4f} | {row['f1_macro']:.4f}")
+
+
 __all__ = [
 	"run_type2_experiment",
 	"run_type23_experiment",
 	"run_type234_experiment",
+	"print_choice1_summary",
 	"run_choice1",
 ]
+
+
+if __name__ == "__main__":
+	from src.data_loader import load_Data
+	from src.dataset_builder import build_databundle
+	from src.preprocessing import add_text_column
+
+	df = add_text_column(load_Data(path=Path("data/AppGallery.csv")))
+	bundle = build_databundle(df)
+	results = run_choice1(bundle, model_name="rf")
+	print_choice1_summary(results)
