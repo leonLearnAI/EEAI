@@ -23,16 +23,15 @@ def build_y2(df: pd.DataFrame) -> pd.Series:
 def build_y23(df: pd.DataFrame) -> pd.Series:
     """Return combined labels for Type 2 and Type 3."""
     _require_columns(df, [Label_Cols[0], Label_Cols[1]])
-    return (df[Label_Cols[0]] + TYPE23_SEPARATOR + df[Label_Cols[1]]).str.strip()
+    left = df[Label_Cols[0]].astype(str)
+    right = df[Label_Cols[1]].astype(str)
+    return (left + TYPE23_SEPARATOR + right).str.strip()
 
 
 def build_y234(df: pd.DataFrame) -> pd.Series:
     """Return combined labels for Type 2, Type 3, and Type 4."""
     _require_columns(df, [Label_Cols[0], Label_Cols[1], Label_Cols[2]])
-    return (
-        df[Label_Cols[0]]
-        + TYPE234_SEPARATOR
-        + df[Label_Cols[1]]
-        + TYPE234_SEPARATOR
-        + df[Label_Cols[2]]
-    ).str.strip()
+    l2 = df[Label_Cols[0]].astype(str)
+    l3 = df[Label_Cols[1]].astype(str)
+    l4 = df[Label_Cols[2]].astype(str)
+    return (l2 + TYPE234_SEPARATOR + l3 + TYPE234_SEPARATOR + l4).str.strip()
