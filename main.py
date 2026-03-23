@@ -3,6 +3,7 @@
 import argparse
 
 from controller import run_architecture
+from src.architectures.choice1_chained import print_choice1_summary
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -25,4 +26,19 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main():
-	pass
+	parser = build_parser()
+	args = parser.parse_args()
+
+	print(f"Starting run: arch={args.arch}, model={args.model}")
+	result = run_architecture(arch=args.arch, model_name=args.model)
+
+	if args.arch == "choice1" and isinstance(result, dict) and "type2" in result:
+		print_choice1_summary(result)
+	else:
+		print(result)
+
+	print("Run finished.")
+
+
+if __name__ == "__main__":
+	main()
