@@ -15,4 +15,5 @@ def _require_columns(df: pd.DataFrame, columns: list[str]) -> None:
 
 
 def build_y2(df: pd.DataFrame) -> pd.Series:
+    """Return labels for Type 2 classification."""
     pass
