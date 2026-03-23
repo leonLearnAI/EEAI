@@ -27,4 +27,5 @@ def build_y23(df: pd.DataFrame) -> pd.Series:
 
 
 def build_y234(df: pd.DataFrame) -> pd.Series:
+    """Return combined labels for Type 2, Type 3, and Type 4."""
     pass
