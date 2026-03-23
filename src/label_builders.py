@@ -5,3 +5,4 @@ import pandas as pd
 from config import Label_Cols
 
 TYPE23_SEPARATOR = "__"
+TYPE234_SEPARATOR = "__"
