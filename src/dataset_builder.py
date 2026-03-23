@@ -78,8 +78,20 @@ def build_databundle(df: pd.DataFrame) -> DataBundle:
     train_x = vectorizer.fit_transform(X_train)
     test_x = vectorizer.transform(X_test)
     # Pack labels into a stable dict format
-    train_y = {"type2": y2_train, "type3": y3_train, "type4": y4_train}
-    test_y = {"type2": y2_test, "type3": y3_test, "type4": y4_test}
+    train_y = {
+        "type2": y2_train,
+        "type3": y3_train,
+        "type4": y4_train,
+        "type23": y23_train,
+        "type234": y234_train,
+    }
+    test_y = {
+        "type2": y2_test,
+        "type3": y3_test,
+        "type4": y4_test,
+        "type23": y23_test,
+        "type234": y234_test,
+    }
 
     return DataBundle(train_x, train_y, test_x, test_y, vectorizer)
 
@@ -95,3 +107,7 @@ if __name__ == "__main__":
     print("test_x shape:", bundle.test_x.shape)
     print("train_y keys:", bundle.train_y.keys())
     print("Sample type2 labels:", bundle.train_y["type2"].head(5).tolist())
+    print("Has type23 key:", "type23" in bundle.train_y)
+    print("Has type234 key:", "type234" in bundle.train_y)
+    print("Sample type23 labels:", bundle.train_y["type23"].head(5).tolist())
+    print("Sample type234 labels:", bundle.train_y["type234"].head(5).tolist())
