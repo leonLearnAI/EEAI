@@ -1,5 +1,6 @@
 """Utility helpers for result formatting and export."""
 
+import csv
 from pathlib import Path
 
 
@@ -19,4 +20,14 @@ def flatten_results(results: dict) -> list[dict]:
 
 
 def export_csv(rows: list[dict], out_path: str | Path) -> None:
-	pass
+	out_path = Path(out_path)
+	out_path.parent.mkdir(parents=True, exist_ok=True)
+	if not rows:
+		out_path.write_text("", encoding="utf-8")
+		return
+
+	fieldnames = list(rows[0].keys())
+	with out_path.open("w", newline="", encoding="utf-8") as f:
+		writer = csv.DictWriter(f, fieldnames=fieldnames)
+		writer.writeheader()
+		writer.writerows(rows)
