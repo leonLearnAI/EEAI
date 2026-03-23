@@ -28,4 +28,11 @@ def build_y23(df: pd.DataFrame) -> pd.Series:
 
 def build_y234(df: pd.DataFrame) -> pd.Series:
     """Return combined labels for Type 2, Type 3, and Type 4."""
-    pass
+    _require_columns(df, [Label_Cols[0], Label_Cols[1], Label_Cols[2]])
+    return (
+        df[Label_Cols[0]]
+        + TYPE234_SEPARATOR
+        + df[Label_Cols[1]]
+        + TYPE234_SEPARATOR
+        + df[Label_Cols[2]]
+    )
