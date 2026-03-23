@@ -11,7 +11,6 @@ from dataclasses import dataclass
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-import test
 from config import Text_Cols, Label_Cols, Test_Size, Random_State, Max_Features
 
 
