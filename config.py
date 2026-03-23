@@ -3,6 +3,7 @@ from pathlib import Path
 
 # 1) Data directory, use ~ and expand to an absolute path
 Data_Dir = Path("~/EEAI/data").expanduser()
+# If your datasets are inside this repo, point Data_Dir to ./data instead.
 # 2) Which CSV to use, switch this name to test another dataset
 # CSV_file = "Purchasing.csv"
 CSV_file = "AppGallery.csv"
