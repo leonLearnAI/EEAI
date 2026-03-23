@@ -9,4 +9,6 @@ TYPE234_SEPARATOR = "__"
 
 
 def _require_columns(df: pd.DataFrame, columns: list[str]) -> None:
-    pass
+    missing = [c for c in columns if c not in df.columns]
+    if missing:
+        raise ValueError(f"Missing columns for label building: {missing}")
