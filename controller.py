@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from src.architectures.choice1_chained import run_choice1 as run_choice1_arch
+from src.architectures.choice2_hierarchical import aggregate_choice2
 from src.data_loader import load_Data
 from src.dataset_builder import build_databundle
 from src.preprocessing import add_text_column
@@ -41,7 +42,8 @@ def run_architecture(
 			export_path=export_path,
 		)
 	if arch == "choice2":
-		return {"message": "Choice2 is not implemented yet."}
+		bundle = build_pipeline_data(data_path=data_path)
+		return aggregate_choice2(bundle, model_name=model_name)
 	raise ValueError(f"Unsupported architecture: {arch}")
 
 
