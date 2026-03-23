@@ -35,4 +35,4 @@ def build_y234(df: pd.DataFrame) -> pd.Series:
         + df[Label_Cols[1]]
         + TYPE234_SEPARATOR
         + df[Label_Cols[2]]
-    )
+    ).str.strip()
