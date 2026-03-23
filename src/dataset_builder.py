@@ -12,6 +12,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from config import Text_Cols, Label_Cols, Test_Size, Random_State, Max_Features
+from src.label_builders import build_y2, build_y23, build_y234
 
 
 @dataclass
@@ -43,12 +44,34 @@ def build_databundle(df: pd.DataFrame) -> DataBundle:
     # X is the cleaned text column
     X = df["text"].astype(str)
     # y columns ,keep them as strings
-    y2 = df[Label_Cols[0]].astype(str)
+    y2 = build_y2(df)
     y3 = df[Label_Cols[1]].astype(str)
     y4 = df[Label_Cols[2]].astype(str)
+    y23 = build_y23(df)
+    y234 = build_y234(df)
     # Split once, so all labels align with the same indices
-    X_train, X_test, y2_train, y2_test, y3_train, y3_test, y4_train, y4_test = (
-        train_test_split(X, y2, y3, y4, test_size=Test_Size, random_state=Random_State)
+    (
+        X_train,
+        X_test,
+        y2_train,
+        y2_test,
+        y3_train,
+        y3_test,
+        y4_train,
+        y4_test,
+        y23_train,
+        y23_test,
+        y234_train,
+        y234_test,
+    ) = train_test_split(
+        X,
+        y2,
+        y3,
+        y4,
+        y23,
+        y234,
+        test_size=Test_Size,
+        random_state=Random_State,
     )
     # Vectorize text using TF-IDF
     vectorizer = TfidfVectorizer(max_features=Max_Features)
