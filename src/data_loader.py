@@ -1,5 +1,3 @@
-from urllib import request
-
 import pandas as pd
 from config import Data_Path, Text_Cols, Label_Cols
 
