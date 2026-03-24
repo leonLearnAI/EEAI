@@ -31,17 +31,16 @@ A comprehensive multi-label email classification framework implementing two arch
 
 ## 📋 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Academic Context](#academic-context)
-- [Architecture](#architecture)
-- [Installation & Setup](#installation--setup)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Design Principles](#design-principles)
-- [Results](#results)
-- [Development](#development)
-- [References](#references)
-- [Contact & Support](#contact--support)
+- [Project Overview](#Project-Overview)
+- [Academic Context](#Academic-Context)
+- [Architecture](#Architecture)
+- [Installation & Setup](#Installation--Setup)
+- [Usage](#Usage)
+- [Project Structure](#Project-Structure)
+- [Design Principles](#Design-Principles)
+- [Results](#Results)
+- [Development](#Development)
+- [References](#References)
 
 ---
 
