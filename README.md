@@ -1,6 +1,31 @@
 # EEAI: Multi-Label Email Classification System
 
-A comprehensive multi-label email classification framework implementing two architectural approaches for multi-output machine learning. This project is developed as part of the **Engineering and Evaluating Artificial Intelligence** coursework assignment at the National College of Ireland.
+---
+
+## 📌 Project Information
+
+| Field | Details |
+|-------|---------|
+| **Degree Programme** | MSc in Artificial Intelligence |
+| **Module Name** | Engineering and Evaluating Artificial Intelligence |
+| **Module Code** | [Placeholder: Module Code] |
+| **Institution** | National College of Ireland |
+| **Assignment** | Continuous Assessment 1 (CA1) |
+| **Submission Deadline** | 26 March 2026 |
+
+## 👥 Team Members
+
+| Name | Student ID | Email |
+|------|-----------|-------|
+| **Nathan Luis Alvares** | [Placeholder: Student ID] | [Placeholder: Email] |
+| **Taehoon Kang (David)** | [Placeholder: Student ID] | [Placeholder: Email] |
+| **Yunxiang Hou (Leon)** | [Placeholder: Student ID] | [Placeholder: Email] |
+
+---
+
+## 📖 Project Description
+
+A comprehensive multi-label email classification framework implementing two architectural approaches for multi-output machine learning. This project demonstrates advanced software engineering practices including separation of concerns, data encapsulation, and model abstraction through the development of a sophisticated multi-label document classification system.
 
 ---
 
@@ -15,6 +40,8 @@ A comprehensive multi-label email classification framework implementing two arch
 - [Design Principles](#design-principles)
 - [Results](#results)
 - [Development](#development)
+- [References](#references)
+- [Contact & Support](#contact--support)
 
 ---
 
@@ -521,11 +548,49 @@ For assessor/lecturer review:
 
 ---
 
-## 📝 Citation / References
+## 📚 References
 
-- **scikit-learn**: Pedregosa et al. (2011). Scikit-learn: Machine Learning in Python
-- **pandas**: McKinney, W. (2010). Data Structures for Statistical Computing in Python
-- **Project Brief**: Engineering and Evaluating Artificial Intelligence, National College of Ireland
+### IEEE Style Citations
+
+[1] F. Pedregosa, G. Varoquaux, A. Gramfort, B. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay, "Scikit-learn: Machine Learning in Python," J. Mach. Learn. Res., vol. 12, pp. 2825–2830, Nov. 2011. [Online]. Available: http://www.jmlr.org/proceedings/papers/v12/pedregosa11a.html
+
+[2] W. McKinney, "Data structures for statistical computing in Python," in Proc. 9th Python Sci. Conf., Austin, TX, USA, 2010, pp. 51–56.
+
+[3] S. Tsoumakas and I. Katakis, "Multi-label classification: An overview," Int. J. Data Warehouse. Min., vol. 3, no. 3, pp. 1–13, 2007.
+
+[4] M.-L. Zhang and Z.-H. Zhou, "A review on multi-label learning algorithms," IEEE Trans. Knowl. Data Eng., vol. 26, no. 8, pp. 1819–1837, Aug. 2014, doi: 10.1109/TKDE.2013.39.
+
+[5] L. Breiman, "Random forests," Mach. Learn., vol. 45, no. 1, pp. 5–32, Oct. 2001, doi: 10.1023/A:1010933404324.
+
+[6] D. W. Hosmer, S. Lemesbow, and J. Lemeshow, "A comparison of goodness-of-fit tests for the logistic regression model," Stat. Med., vol. 16, no. 9, pp. 965–980, May 1997, doi: 10.1002/(SICI)1097-0258(19970515)16:9<965::AID-SIM509>3.0.CO;2-O.
+
+[7] J. Frankle and M. Carbin, "The lottery ticket hypothesis: Finding sparse, trainable neural networks," in Proc. Int. Conf. Learn. Representations (ICLR), 2019, arXiv:1803.03635.
+
+[8] C. D. Manning, P. Raghavan, and H. Schütze, Introduction to Information Retrieval. Cambridge, U.K.: Cambridge Univ. Press, 2008. [Online]. Available: https://nlp.stanford.edu/IR-book/
+
+[9] T. K. Ho, "Random decision forests," in Proc. 3rd Int. Conf. Document Analysis Recognition, Montreal, QC, Canada, 1995, pp. 278–282, doi: 10.1109/ICDAR.1995.598994.
+
+[10] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, May 2015, doi: 10.1038/nature14539.
+
+[11] K. Jarvelin and J. Kekalainen, "Cumulated gain-based evaluation of IR techniques," ACM Trans. Inf. Syst., vol. 20, no. 4, pp. 422–446, Oct. 2002, doi: 10.1145/582415.582418.
+
+[12] S. J. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed. Harlow, U.K.: Pearson, 2020.
+
+[13] I. H. Witten, E. Frank, M. A. Hall, and C. J. Pal, Data Mining: Practical Machine Learning Tools and Techniques, 4th ed. San Francisco, CA, USA: Morgan Kaufmann, 2016.
+
+[14] C. Cortes and V. Vapnik, "Support-vector networks," Mach. Learn., vol. 20, no. 3, pp. 273–297, Sep. 1995, doi: 10.1023/A:1022627411411.
+
+[15] U. M. Fayyad, G. Piatetsky-Shapiro, and P. Smyth, "From data mining to knowledge discovery in databases," AI Mag., vol. 17, no. 3, pp. 37–54, Fall 1996.
+
+[16] D. A. Grossman and O. Frieder, Information Retrieval: Algorithms and Heuristics, 2nd ed. Dordrecht, Netherlands: Springer-Verlag, 2004.
+
+[17] G. Forman and B. Scholz, "Apriori algorithm for fast frequent itemset mining," in Knowledge Discovery and Data Mining, MIT Press, Cambridge, MA, USA, 2003, ch. 8.
+
+[18] E. A. Nadaraya, "On estimating regression," Theory Probab. Its Appl., vol. 9, no. 1, pp. 141–142, 1964, doi: 10.1137/1109020.
+
+[19] B. W. Kernighan and D. M. Ritchie, The C Programming Language, 2nd ed. Englewood Cliffs, NJ, USA: Prentice-Hall, 1988.
+
+[20] X. Chen and C. Guestrin, "XGBoost: A scalable tree boosting system," in Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, San Francisco, CA, USA, 2016, pp. 785–794, doi: 10.1145/2939672.2939785.
 
 ---
 
@@ -535,6 +600,7 @@ For questions or issues:
 1. Check the `CA_Brief/` folder for assignment-specific documentation
 2. Review generated CSV files in `reports/` for detailed metrics
 3. Consult commit messages in Git history for implementation decisions
+4. Contact team members using the email addresses above
 
 ---
 
