@@ -8,7 +8,7 @@
 |-------|---------|
 | **Degree Programme** | MSc in Artificial Intelligence |
 | **Module Name** | Engineering and Evaluating Artificial Intelligence |
-| **Module Code** | [Placeholder: Module Code] |
+| **Module Code** | H9EEAI |
 | **Institution** | National College of Ireland |
 | **Assignment** | Continuous Assessment 1 (CA1) |
 | **Submission Deadline** | 26 March 2026 |
@@ -17,9 +17,9 @@
 
 | Name | Student ID | Email |
 |------|-----------|-------|
-| **Nathan Luis Alvares** | [Placeholder: Student ID] | [Placeholder: Email] |
-| **Taehoon Kang (David)** | [Placeholder: Student ID] | [Placeholder: Email] |
-| **Yunxiang Hou (Leon)** | [Placeholder: Student ID] | [Placeholder: Email] |
+| **Nathan Luis Alvares** | 24327018 | x24327018@student.ncirl.ie |
+| **Taehoon Kang (David)** | 23268212 | x23268212@student.ncirl.ie |
+| **Yunxiang Hou (Leon)** | 25110594 | x25110594@student.ncirl.ie |
 
 ---
 
@@ -543,7 +543,7 @@ Key commits include:
 
 For assessor/lecturer review:
 - Repository: [leonLearnAI/EEAI](https://github.com/leonLearnAI/EEAI)
-- Branch: `Nathon`
+- Branches: `Nathon`, `David`, `Leon` (for individual contributions)
 - Full commit history available for verification
 
 ---
@@ -552,57 +552,36 @@ For assessor/lecturer review:
 
 ### IEEE Style Citations
 
-[1] F. Pedregosa, G. Varoquaux, A. Gramfort, B. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay, "Scikit-learn: Machine Learning in Python," J. Mach. Learn. Res., vol. 12, pp. 2825–2830, Nov. 2011. [Online]. Available: http://www.jmlr.org/proceedings/papers/v12/pedregosa11a.html
+[1] F. Pedregosa, G. Varoquaux, A. Gramfort, B. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay, "Scikit-learn: Machine Learning in Python," J. Mach. Learn. Res., vol. 12, pp. 2825–2830, Nov. 2011. [Online]. Available: https://jmlr.org/papers/v12/pedregosa11a.html#:~:text=Scikit%2Dlearn%20is%20a%20Python,%2Dpurpose%20high%2Dlevel%20language.
 
-[2] W. McKinney, "Data structures for statistical computing in Python," in Proc. 9th Python Sci. Conf., Austin, TX, USA, 2010, pp. 51–56.
+[2] W. McKinney, "Data structures for statistical computing in Python," in Proc. 9th Python Sci. Conf., Austin, TX, USA, 2010, pp. 51–56. [Online]. Available: https://proceedings.scipy.org/articles/Majora-92bf1922-00a.pdf
 
-[3] S. Tsoumakas and I. Katakis, "Multi-label classification: An overview," Int. J. Data Warehouse. Min., vol. 3, no. 3, pp. 1–13, 2007.
+[3] S. Tsoumakas and I. Katakis, "Multi-label classification: An overview," Int. J. Data Warehouse. Min., vol. 3, no. 3, pp. 1–13, 2007. [Online]. Available: https://scispace.com/pdf/multi-label-classification-an-overview-3lubavw9dw.pdf
 
-[4] M.-L. Zhang and Z.-H. Zhou, "A review on multi-label learning algorithms," IEEE Trans. Knowl. Data Eng., vol. 26, no. 8, pp. 1819–1837, Aug. 2014, doi: 10.1109/TKDE.2013.39.
+[4] M.-L. Zhang and Z.-H. Zhou, "A review on multi-label learning algorithms," IEEE Trans. Knowl. Data Eng., vol. 26, no. 8, pp. 1819–1837, Aug. 2014, doi: 10.1109/TKDE.2013.39. [Online]. Available: https://ieeexplore.ieee.org/document/6471714
 
-[5] L. Breiman, "Random forests," Mach. Learn., vol. 45, no. 1, pp. 5–32, Oct. 2001, doi: 10.1023/A:1010933404324.
+[5] L. Breiman, "Random forests," Mach. Learn., vol. 45, no. 1, pp. 5–32, Oct. 2001, doi: 10.1023/A:1010933404324. [Online]. Available: https://link.springer.com/article/10.1023/A:1010933404324
 
-[6] D. W. Hosmer, S. Lemesbow, and J. Lemeshow, "A comparison of goodness-of-fit tests for the logistic regression model," Stat. Med., vol. 16, no. 9, pp. 965–980, May 1997, doi: 10.1002/(SICI)1097-0258(19970515)16:9<965::AID-SIM509>3.0.CO;2-O.
+[6] D. W. Hosmer, S. Lemesbow, and J. Lemeshow, "A comparison of goodness-of-fit tests for the logistic regression model," Stat. Med., vol. 16, no. 9, pp. 965–980, May 1997, doi: 10.1002/(SICI)1097-0258(19970515)16:9<965::AID-SIM509>3.0.CO;2-O. [Online]. Available: https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0258%2819970515%2916%3A9%3C965%3A%3AAID-SIM509%3E3.0.CO%3B2-O
 
-[7] J. Frankle and M. Carbin, "The lottery ticket hypothesis: Finding sparse, trainable neural networks," in Proc. Int. Conf. Learn. Representations (ICLR), 2019, arXiv:1803.03635.
+[7] J. Frankle and M. Carbin, "The lottery ticket hypothesis: Finding sparse, trainable neural networks," in Proc. Int. Conf. Learn. Representations (ICLR), 2019, arXiv:1803.03635. [Online]. Available: https://arxiv.org/abs/1803.03635
 
 [8] C. D. Manning, P. Raghavan, and H. Schütze, Introduction to Information Retrieval. Cambridge, U.K.: Cambridge Univ. Press, 2008. [Online]. Available: https://nlp.stanford.edu/IR-book/
 
-[9] T. K. Ho, "Random decision forests," in Proc. 3rd Int. Conf. Document Analysis Recognition, Montreal, QC, Canada, 1995, pp. 278–282, doi: 10.1109/ICDAR.1995.598994.
+[9] T. K. Ho, "Random decision forests," in Proc. 3rd Int. Conf. Document Analysis Recognition, Montreal, QC, Canada, 1995, pp. 278–282, doi: 10.1109/ICDAR.1995.598994. [Online]. Available: https://ieeexplore.ieee.org/document/598994
 
-[10] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, May 2015, doi: 10.1038/nature14539.
+[10] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, May 2015, doi: 10.1038/nature14539. [Online]. Available: https://github.com/voice32/activations_optimizers/blob/master/papers/Deep%20Learning%20Review%20(Nature)%20-%20Yann%20LeCun%2C%20Yoshua%20Bengio%2C%20Geoffrey%20Hinton.pdf
 
-[11] K. Jarvelin and J. Kekalainen, "Cumulated gain-based evaluation of IR techniques," ACM Trans. Inf. Syst., vol. 20, no. 4, pp. 422–446, Oct. 2002, doi: 10.1145/582415.582418.
+[11] K. Jarvelin and J. Kekalainen, "Cumulated gain-based evaluation of IR techniques," ACM Trans. Inf. Syst., vol. 20, no. 4, pp. 422–446, Oct. 2002, doi: 10.1145/582415.582418. [Online]. Available: https://dl.acm.org/doi/10.1145/582415.582418
 
-[12] S. J. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed. Harlow, U.K.: Pearson, 2020.
+[12] S. J. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed. Harlow, U.K.: Pearson, 2020. [Online]. Available: https://people.engr.tamu.edu/guni/csce625/slides/AI.pdf
 
-[13] I. H. Witten, E. Frank, M. A. Hall, and C. J. Pal, Data Mining: Practical Machine Learning Tools and Techniques, 4th ed. San Francisco, CA, USA: Morgan Kaufmann, 2016.
+[13] I. H. Witten, E. Frank, M. A. Hall, and C. J. Pal, Data Mining: Practical Machine Learning Tools and Techniques, 4th ed. San Francisco, CA, USA: Morgan Kaufmann, 2016. [Online]. Available: https://tjzhifei.github.io/links/DM3.pdf
 
-[14] C. Cortes and V. Vapnik, "Support-vector networks," Mach. Learn., vol. 20, no. 3, pp. 273–297, Sep. 1995, doi: 10.1023/A:1022627411411.
+[14] C. Cortes and V. Vapnik, "Support-vector networks," Mach. Learn., vol. 20, no. 3, pp. 273–297, Sep. 1995, doi: 10.1023/A:1022627411411. [Online]. Available: https://link.springer.com/article/10.1007/BF00994018
 
-[15] U. M. Fayyad, G. Piatetsky-Shapiro, and P. Smyth, "From data mining to knowledge discovery in databases," AI Mag., vol. 17, no. 3, pp. 37–54, Fall 1996.
+[15] U. M. Fayyad, G. Piatetsky-Shapiro, and P. Smyth, "From data mining to knowledge discovery in databases," AI Mag., vol. 17, no. 3, pp. 37–54, Fall 1996. [Online]. Available: https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1230
 
-[16] D. A. Grossman and O. Frieder, Information Retrieval: Algorithms and Heuristics, 2nd ed. Dordrecht, Netherlands: Springer-Verlag, 2004.
+[16] D. A. Grossman and O. Frieder, Information Retrieval: Algorithms and Heuristics, 2nd ed. Dordrecht, Netherlands: Springer-Verlag, 2004. [Online]. Available: https://link.springer.com/book/10.1007/978-1-4020-3005-5
 
-[17] G. Forman and B. Scholz, "Apriori algorithm for fast frequent itemset mining," in Knowledge Discovery and Data Mining, MIT Press, Cambridge, MA, USA, 2003, ch. 8.
-
-[18] E. A. Nadaraya, "On estimating regression," Theory Probab. Its Appl., vol. 9, no. 1, pp. 141–142, 1964, doi: 10.1137/1109020.
-
-[19] B. W. Kernighan and D. M. Ritchie, The C Programming Language, 2nd ed. Englewood Cliffs, NJ, USA: Prentice-Hall, 1988.
-
-[20] X. Chen and C. Guestrin, "XGBoost: A scalable tree boosting system," in Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, San Francisco, CA, USA, 2016, pp. 785–794, doi: 10.1145/2939672.2939785.
-
----
-
-## 📞 Contact & Support
-
-For questions or issues:
-1. Check the `CA_Brief/` folder for assignment-specific documentation
-2. Review generated CSV files in `reports/` for detailed metrics
-3. Consult commit messages in Git history for implementation decisions
-4. Contact team members using the email addresses above
-
----
-
-**Last Updated**: March 2026  
-**Status**: Choice 1 Fully Implemented ✅ | Choice 2 Design-Complete, Partially Implemented ⚠️
+[18] X. Chen and C. Guestrin, "XGBoost: A scalable tree boosting system," in Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, San Francisco, CA, USA, 2016, pp. 785–794, doi: 10.1145/2939672.2939785. [Online]. Available: https://dl.acm.org/doi/10.1145/2939672.2939785
